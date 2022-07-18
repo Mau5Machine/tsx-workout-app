@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  font-family: 'Metal Mania', cursive;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, a {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ant-card-extra {
+  width: 100%;
+}
