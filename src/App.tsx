@@ -16,6 +16,16 @@ const Section = styled.div`
   .description-text {
     font-size: 20px;
   }
+
+  @media(max-width: 576px) {
+    .description-title {
+      font-size: 15px;
+    }
+
+    .description-text {
+      font-size: 12px;
+    }
+  }
 `
 
 const FlexFeatures = styled.div`
@@ -41,6 +51,7 @@ const FlexFeatures = styled.div`
 const ImageBackground = styled.div`
   background-image: url("images/fit-five.jpeg");
   background-size: cover;
+  min-height: 400px;
   height: 100%;
 `
 
@@ -49,7 +60,7 @@ const App: React.FC = () => (
     title="RockStar Fitness"
   >
     <Row>
-      <Col span={12}>
+      <Col xs={24} sm={24} lg={12}>
         <Section>
           <div className="description-title">
             <h2>Fitness Application</h2>
@@ -82,7 +93,7 @@ const App: React.FC = () => (
           </FlexFeatures>
         </Section>
       </Col>
-      <Col span={12}>
+      <Col xs={24} sm={24} lg={12}>
         <ImageBackground/>
       </Col>
     </Row>

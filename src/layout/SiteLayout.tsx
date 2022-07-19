@@ -38,6 +38,12 @@ const Banner = styled.div`
     font-size: 55px;
     letter-spacing: 4px;
   }
+
+  @media(max-width: 576px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
 `
 
 interface Props {
